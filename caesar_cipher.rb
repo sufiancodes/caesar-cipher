@@ -10,7 +10,6 @@ arry = message.chars.map{|char| char.ord}
 
 # adding shift to the message while avoiding the spaces
 shifted_message = arry.map do |value|
-  # avoiding all punction mark
   if value != 32 && value != 33 && value != 44 && value != 45 && value != 46 && value != 47 && value != 63
     shifted_value = value+shift
     if value.between?(65, 90) && shifted_value > 90
